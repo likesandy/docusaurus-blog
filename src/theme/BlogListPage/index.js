@@ -52,8 +52,10 @@ function BlogListPage(props) {
   // list or card view
   const { viewType, toggleViewType } = useViewType();
 
-  const isCardView = viewType === "card";
-  const isListView = viewType === "list";
+  // const isCardView = viewType === "card";
+  useEffect(() => {
+    const isListView = viewType === "list";
+  }, [])
 
   return (
     <Layout
@@ -96,124 +98,74 @@ function BlogListPage(props) {
               )}
               {/* switch list and card */}
               <div className="bloghome__swith-view">
-                <CardFilter
-                  onClick={() => toggleViewType("card")}
-                  className={
-                    viewType === "card"
-                      ? "bloghome__switch--selected"
-                      : "bloghome__switch"
-                  }
-                />
-                <ListFilter
-                  onClick={() => toggleViewType("list")}
-                  className={
-                    viewType === "list"
-                      ? "bloghome__switch--selected"
-                      : "bloghome__switch"
-                  }
-                />
               </div>
               <div className="bloghome__posts">
-                {isCardView && (
-                  <div className="bloghome__posts-card">
-                    {items.map(({ content: BlogPostContent }, index) => (
-                      // <Fade key={BlogPostContent.metadata.permalink}>
-                      <React.Fragment key={BlogPostContent.metadata.permalink}>
-                        {index % 2 === 0 && (
-                          <Adsense
-                            key={index}
-                            layoutKey="-em-35+j4-rj-3c"
-                            format="fluid"
-                            slot="9557780226"
-                          />
-                        )}
-                        <BlogPostItem
-                          key={BlogPostContent.metadata.permalink}
-                          frontMatter={BlogPostContent.frontMatter}
-                          metadata={BlogPostContent.metadata}
-                          truncated={BlogPostContent.metadata.truncated}
-                          views={
-                            views.find(
-                              (v) => v.slug == BlogPostContent.frontMatter.slug
-                            )?.views
-                          }
-                        >
-                          <BlogPostContent />
-                        </BlogPostItem>
-                      </React.Fragment>
-                      // </Fade>
-                    ))}
-                  </div>
-                )}
                 <Adsense responsive="true" auto="fluid" slot="6767147116" />
-                {isListView && (
-                  <div className="bloghome__posts-list">
-                    {items.map(({ content: BlogPostContent }, index) => {
-                      const { metadata: blogMetaData, frontMatter } =
-                        BlogPostContent;
-                      const { title } = frontMatter;
-                      const { permalink, date, tags } = blogMetaData;
+                <div className="bloghome__posts-list">
+                  {items.map(({ content: BlogPostContent }, index) => {
+                    const { metadata: blogMetaData, frontMatter } =
+                      BlogPostContent;
+                    const { title } = frontMatter;
+                    const { permalink, date, tags } = blogMetaData;
 
-                      const dateObj = new Date(date);
+                    const dateObj = new Date(date);
 
-                      const year = dateObj.getFullYear();
-                      let month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
-                      const day = ("0" + dateObj.getDate()).slice(-2);
+                    const year = dateObj.getFullYear();
+                    let month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
+                    const day = ("0" + dateObj.getDate()).slice(-2);
 
-                      return (
-                        <React.Fragment key={blogMetaData.permalink}>
-                          {(index + 1) % 4 === 3 && (
-                            <div className="post__list-style-ad">
-                              <Adsense
-                                layoutKey="-em-35+j4-rj-3c"
-                                format="fluid"
-                                slot="9557780226"
-                              />
-                            </div>
-                          )}
-                          <div
-                            className="post__list-item"
-                            key={blogMetaData.permalink}
-                          >
-                            <Link to={permalink} className="post__list-title">
-                              {title}
-                            </Link>
-                            <div className="post__list-tags">
-                              {tags.length > 0 &&
-                                tags
-                                  .slice(0, 2)
-                                  .map(
-                                    (
-                                      { label, permalink: tagPermalink },
-                                      index
-                                    ) => (
-                                      <Link
-                                        key={tagPermalink}
-                                        className={`post__tags ${
-                                          index < tags.length
-                                            ? "margin-right--sm"
-                                            : ""
-                                        }`}
-                                        to={tagPermalink}
-                                        style={{
-                                          fontSize: "0.75em",
-                                          fontWeight: 500,
-                                        }}
-                                      >
-                                        {label}
-                                      </Link>
-                                    )
-                                  )}
-                            </div>
-                            <div className="post__list-date">
-                              {year}-{month}-{day}
-                            </div>
+                    return (
+                      <React.Fragment key={blogMetaData.permalink}>
+                        {(index + 1) % 4 === 3 && (
+                          <div className="post__list-style-ad">
+                            <Adsense
+                              layoutKey="-em-35+j4-rj-3c"
+                              format="fluid"
+                              slot="9557780226"
+                            />
                           </div>
-                        </React.Fragment>
-                      );
-                    })}
-                  </div>
-                )}
+                        )}
+                        <div
+                          className="post__list-item"
+                          key={blogMetaData.permalink}
+                        >
+                          <Link to={permalink} className="post__list-title">
+                            {title}
+                          </Link>
+                          <div className="post__list-tags">
+                            {tags.length > 0 &&
+                              tags
+                                .slice(0, 2)
+                                .map(
+                                  (
+                                    { label, permalink: tagPermalink },
+                                    index
+                                  ) => (
+                                    <Link
+                                      key={tagPermalink}
+                                      className={`post__tags ${index < tags.length
+                                        ? "margin-right--sm"
+                                        : ""
+                                        }`}
+                                      to={tagPermalink}
+                                      style={{
+                                        fontSize: "0.75em",
+                                        fontWeight: 500,
+                                      }}
+                                    >
+                                      {label}
+                                    </Link>
+                                  )
+                                )}
+                          </div>
+                          <div className="post__list-date">
+                            {year}-{month}-{day}
+                          </div>
+                        </div>
+                      </React.Fragment>
+                    );
+                  })}
+                </div>
                 <BlogListPaginator metadata={metadata} />
               </div>
             </div>
