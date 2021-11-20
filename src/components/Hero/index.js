@@ -130,34 +130,6 @@ function Hero() {
   );
 }
 
-function SocialLinks({ animatedProps, ...props }) {
-  // const { isDarkTheme } = useThemeContext();
-  return (
-    <animated.div className={styles.social__links} style={animatedProps}>
-      <a href="https://space.bilibili.com/302954484">
-        <BilibiliIcon />
-      </a>
-      <a href="https://www.linkedin.com/in/zxuqian/">
-        <FontAwesomeIcon icon={faLinkedin} size="lg" />
-      </a>
-      <a href="https://github.com/zxuqian">
-        <FontAwesomeIcon icon={faGithub} size="lg" />
-      </a>
-      <a href="https://blog.csdn.net/fengqiuzhihua">
-        <CSDNIcon />
-      </a>
-      <div className={`dropdown ${styles.dropdown} dropdown--hoverable`}>
-        <FontAwesomeIcon icon={faWeixin} size="lg" />
-        <img
-          width="50%"
-          className={`dropdown__menu ${styles.dropdown__menu}`}
-          src={useBaseUrl("/img/publicQR.webp")}
-        />
-      </div>
-    </animated.div>
-  );
-}
-
 function HeroMainImage() {
   return (
     <div className={styles.bloghome__image}>

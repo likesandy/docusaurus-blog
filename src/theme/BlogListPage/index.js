@@ -5,22 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useEffect } from "react";
+import React from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import BlogPostItem from "@theme/BlogPostItem";
-import BlogListPaginator from "@theme/BlogListPaginator";
-
-import useViews from "./useViews";
-
-// import Fade from "react-reveal/Fade";
 
 import Translate from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";
-
-import ListFilter from "./img/list.svg";
-import CardFilter from "./img/card.svg";
 
 import Link from "@docusaurus/Link";
 import { useViewType } from "./useViewType";
@@ -46,13 +37,8 @@ function BlogListPage(props) {
     description = "一个前端 UP 主的生活方式、思想感悟、学习经验等";
   }
 
-  // Get all post views
-  const views = useViews(items);
+  const { viewType } = useViewType();
 
-  // list or card view
-  const { viewType, toggleViewType } = useViewType();
-
-  const isCardView = viewType === "card";
   const isListView = viewType === "list";
 
   return (
@@ -73,7 +59,6 @@ function BlogListPage(props) {
         <div className="container padding-vert--sm">
           <div className="row">
             <div className="col col--12">
-              {/* <div className="content__divider"></div> */}
               {!isPaginated && (
                 <h1 className="blog__section_title" id="homepage_blogs">
                   <Translate description="latest blogs heading">
@@ -81,42 +66,9 @@ function BlogListPage(props) {
                   </Translate>
                 </h1>
               )}
-              {/* switch list and card */}
               <div className="bloghome__swith-view">
               </div>
               <div className="bloghome__posts">
-                {isCardView && (
-                  <div className="bloghome__posts-card">
-                    {items.map(({ content: BlogPostContent }, index) => (
-                      // <Fade key={BlogPostContent.metadata.permalink}>
-                      <React.Fragment key={BlogPostContent.metadata.permalink}>
-                        {index % 2 === 0 && (
-                          <Adsense
-                            key={index}
-                            layoutKey="-em-35+j4-rj-3c"
-                            format="fluid"
-                            slot="9557780226"
-                          />
-                        )}
-                        <BlogPostItem
-                          key={BlogPostContent.metadata.permalink}
-                          frontMatter={BlogPostContent.frontMatter}
-                          metadata={BlogPostContent.metadata}
-                          truncated={BlogPostContent.metadata.truncated}
-                          views={
-                            views.find(
-                              (v) => v.slug == BlogPostContent.frontMatter.slug
-                            )?.views
-                          }
-                        >
-                          <BlogPostContent />
-                        </BlogPostItem>
-                      </React.Fragment>
-                      // </Fade>
-                    ))}
-                  </div>
-                )}
-                <Adsense responsive="true" auto="fluid" slot="6767147116" />
                 {isListView && (
                   <div className="bloghome__posts-list">
                     {items.map(({ content: BlogPostContent }, index) => {
@@ -161,8 +113,8 @@ function BlogListPage(props) {
                                       <Link
                                         key={tagPermalink}
                                         className={`post__tags ${index < tags.length
-                                            ? "margin-right--sm"
-                                            : ""
+                                          ? "margin-right--sm"
+                                          : ""
                                           }`}
                                         to={tagPermalink}
                                         style={{
@@ -184,7 +136,6 @@ function BlogListPage(props) {
                     })}
                   </div>
                 )}
-                <BlogListPaginator metadata={metadata} />
               </div>
             </div>
           </div>
