@@ -108,10 +108,9 @@ function Hero() {
               ),
             }}
           >
-            {`本仓库建立的初衷是为了记录一路走来学习的计算机专业知识，方便之后复习与查看。起于此，但不止于此，在不断的摸索和完善，勤能补拙，相信一点点的积累最后汇聚成海！希望我的这个小小的计划，可以帮助到实力强大的你！`}
+            {`本仓库建立的初衷是为了记录一路走来学习的计算机专业知识，方便之后复习与查看。起于此，但不止于此，在不断的摸索和完善，勤能补拙，相信一点点的积累最后汇聚成海！希望我的这个小小的计划，可以帮助到实力强大的你！止于至善 `}
           </Translate>
         </animated.p>
-        <SocialLinks animatedProps={animatedTexts[4]} />
         <animated.div style={animatedTexts[2]}>
           <Button
             isLink
@@ -119,30 +118,14 @@ function Hero() {
               id: "homepage.follow.link.href",
               message:
                 "https://space.bilibili.com/302954484?from=search&seid=1788147379248960737",
-              description: "social link bilibili or twitter",
             })}
           >
-            <Translate description="follow me btn text">去B站关注</Translate>
-            <Translate
-              id="homepage.followers"
-              description="followers"
-              values={{ count: (Math.round(followers) / 10000).toFixed(1) }}
-            >
-              {" {count} 万"}
-            </Translate>
+            <Translate description="follow me btn text">Hello World</Translate>
           </Button>
         </animated.div>
       </div>
 
       <HeroMainImage />
-      {/* <animated.div
-      className="bloghome__scroll-down"
-      style={animatedBackground}
-    >
-      <button>
-        <ArrowDown />
-      </button>
-    </animated.div> */}
     </animated.div>
   );
 }

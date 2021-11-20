@@ -5,21 +5,19 @@ const adsense = require("./src/plugin/remark-adsense");
 
 module.exports = {
   title: "codertao",
-  // tagline:
-  //   "帮助你提升前端开发技能，分享 HTML、CSS、JavaScript、React 和 Vue 等开发实战经验",
   titleDelimiter: "-",
   url: "https://zxuqian.cn",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "zxuqian", // Usually your GitHub org/user name.
-  projectName: "zxuqian.cn", // Usually your repo name.
+  organizationName: "likesandy", // Usually your GitHub org/user name.
+  projectName: "docusaurus-blog", // Usually your repo name.
   themeConfig: {
     image: "img/favicon.ico",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/browser/js-web-animations-api'>《与 CSS Keyframes 媲美的原生 JS 高性能动画 API 教程》配套文本</a>`,
+      content: `近期更新：<a>博客迁移</a>🎉🎉`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
-      textColor: "#091E42", // Defaults to `#000`.
+      textColor: "#238E23   ", // Defaults to `#000`.
     },
     hideableSidebar: true,
     navbar: {
@@ -30,28 +28,10 @@ module.exports = {
         srcDark: "img/favicon.ico",
       },
       items: [
-        // {
-        //   type: "localeDropdown",
-        //   position: "left",
-        // },
         {
           to: "/",
           label: "首页",
           position: "right",
-          items: [
-            {
-              label: "随笔",
-              to: "lifestyle",
-            },
-            // {
-            //   label: "职业",
-            //   to: "tags/职业",
-            // },
-            // {
-            //   label: "健康",
-            //   to: "tags/健康",
-            // },
-          ],
         },
         {
           label: "学习",
@@ -67,13 +47,10 @@ module.exports = {
             },
             {
               label: "资源导航",
-              // position: "right",
               to: "docs/resources/",
             },
           ],
         },
-
-
         {
           label: "小工具",
           position: "right",
@@ -84,11 +61,6 @@ module.exports = {
           label: "本站源码",
           position: "right",
         },
-        // {
-        //   href: "https://github.com/zxuqian/frontend-questions/issues",
-        //   label: "提问",
-        //   position: "right",
-        // },
       ],
     },
     algolia: {
@@ -123,10 +95,6 @@ module.exports = {
         {
           title: "社交媒体",
           items: [
-            // {
-            //   label: "首页",
-            //   to: "/",
-            // },
             {
               label: "GitHub",
               href: "https://github.com/zxuqian/zxuqian.cn",
@@ -149,34 +117,54 @@ module.exports = {
           title: "友情链接",
           items: [
             {
-              label: "yuqing521のblog",
-              to: "https://yuqing521.github.io/",
+              label: "DingShiYi",
+              to: "https://dingshiyi.top/home",
             },
             {
-              label: "lookroot的个人空间",
-              to: "https://www.lookroot.cn/",
+              label: "霜序廿的个人网站",
+              to: "https://shuangxunian.github.io/",
             },
             {
-              label: "潜心专研的小张同学",
-              to: "https://zhangqiang.vercel.app/",
+              label: "羽翼丶年华",
+              to: "https://eve-wings.github.io/Eve-Wings/",
+            },
+            {
+              label: "旧版博客",
+              to: "https://itsandy.gitee.io/sandy.gitee.io/#/",
+            },
+          ],
+        },
+        {
+          title: "友情链接",
+          items: [
+            {
+              label: "DingShiYi",
+              to: "https://dingshiyi.top/home",
+            },
+            {
+              label: "霜序廿的个人网站",
+              to: "https://shuangxunian.github.io/",
+            },
+            {
+              label: "羽翼丶年华",
+              to: "https://eve-wings.github.io/Eve-Wings/",
+            },
+            {
+              label: "旧版博客",
+              to: "https://itsandy.gitee.io/sandy.gitee.io/#/",
             },
           ],
         },
       ],
-      copyright: `<p>Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.</p><p><a href="http://beian.miit.gov.cn/" >冀ICP备14007097号-3</a></p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/creative-commons-license-icon.png" /></a><br />本站所有内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans" >CC BY-NC 4.0 协议</a>，转载须注明署名和出处，且不可用于商业用途。若与其他同步平台协议冲突，以本网站为准。`,
+      copyright: `<br><br><br><br><p>Copyright © ${new Date().getFullYear()} codertao Built with Docusaurus`,
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
-    // googleAnalytics: {
-    //   trackingID: "UA-118572241-1",
-    //   anonymizeIP: true, // Should IPs be anonymized?
-    // },
     gtag: {
       trackingID: "G-6PSESJX0BM",
-      // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
   },
@@ -200,7 +188,7 @@ module.exports = {
           feedOptions: {
             type: "all",
             title: "codertao",
-            copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">冀ICP备14007097号-3</a></p>`,
+            copyright: `<br><br><br>Copyright © ${new Date().getFullYear()} codertao Built with Docusaurus`,
           },
         },
         theme: {
@@ -222,28 +210,6 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
     path.resolve(__dirname, "./src/plugin/plugin-latest-docs"),
     "docusaurus2-dotenv",
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "secret-garden",
-        routeBasePath: "lifestyle",
-        path: "./lifestyle",
-        feedOptions: {
-          type: "all",
-          title: "峰华前端工程师",
-          copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" >冀ICP备14007097号-3</a></p>`,
-        },
-      },
-    ],
-    // [
-    //   "@easyops-cn/docusaurus-search-local",
-    //   {
-    //     hashed: true,
-    //     // indexPages: true,
-    //     blogRouteBasePath: "/",
-    //     language: ["en", "zh"],
-    //   },
-    // ],
   ],
   stylesheets: [
     {
@@ -263,23 +229,5 @@ module.exports = {
       type: "text/css",
       rel: "stylesheet",
     },
-    // {
-    //   href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
-    //   type: "text/css",
-    //   rel: "stylesheet",
-    // },
   ],
-  i18n: {
-    defaultLocale: "zh-CN",
-    locales: ["zh-CN"],
-    // locales: ["zh-CN", "en"],
-    // localeConfigs: {
-    //   "zh-CN": {
-    //     label: "中文",
-    //   },
-    //   en: {
-    //     label: "English",
-    //   },
-    // },
-  },
 };
