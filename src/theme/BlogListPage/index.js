@@ -10,9 +10,6 @@ import React, { useEffect } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
-import useViews from "./useViews";
-
-// import Fade from "react-reveal/Fade";
 
 import Translate from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";

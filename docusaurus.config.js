@@ -141,7 +141,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master",
           remarkPlugins: [math, adsense],
           rehypePlugins: [katex],
           showLastUpdateTime: true,
