@@ -28,30 +28,12 @@ module.exports = {
           position: "right",
         },
         {
-          label: "学习",
+          to: "docs/collect/intro",
+          label: "优文转载",
           position: "right",
-          items: [
-            {
-              label: "技术视频",
-              to: "docs/videos/",
-            },
-            {
-              label: "CSS 完全指南",
-              to: "docs/css/css-tutorial-intro",
-            },
-            {
-              label: "资源导航",
-              to: "docs/resources/",
-            },
-          ],
         },
         {
-          label: "小工具",
-          position: "right",
-          to: "docs/tools/",
-        },
-        {
-          href: "https://github.com/zxuqian/zxuqian.cn",
+          href: "https://github.com/likesandy/docusaurus-blog",
           label: "本站源码",
           position: "right",
         },
@@ -66,23 +48,23 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "学习",
+          title: "社交媒体",
           items: [
             {
-              label: "React 即时通信 UI 开发实战",
-              to: "docs/course/react-chat-ui",
+              label: "GitHub",
+              href: "https://github.com/zxuqian/zxuqian.cn",
             },
             {
-              label: "技术视频",
-              to: "docs/videos",
+              label: "Bilibili 哔哩哔哩",
+              href: "https://space.bilibili.com/302954484",
             },
             {
-              label: "CSS 完全指南",
-              to: "docs/css/css-tutorial-intro",
+              label: "网易云课堂",
+              href: "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
             },
             {
-              label: "资源导航",
-              to: "docs/resources",
+              label: "腾讯课堂",
+              href: "https://ke.qq.com/course/2839093?tuin=3850fdc6",
             },
           ],
         },

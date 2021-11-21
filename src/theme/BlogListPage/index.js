@@ -9,8 +9,6 @@ import React, { useEffect } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import BlogPostItem from "@theme/BlogPostItem";
-import BlogListPaginator from "@theme/BlogListPaginator";
 
 import useViews from "./useViews";
 
@@ -19,15 +17,11 @@ import useViews from "./useViews";
 import Translate from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";
 
-import ListFilter from "./img/list.svg";
-import CardFilter from "./img/card.svg";
 
 import Link from "@docusaurus/Link";
 import { useViewType } from "./useViewType";
 
 import Hero from "@site/src/components/Hero";
-import Adsense from "@site/src/components/Adsense";
-
 function BlogListPage(props) {
   const { metadata, items } = props;
 
@@ -47,7 +41,6 @@ function BlogListPage(props) {
   }
 
   // Get all post views
-  const views = useViews(items);
 
   // list or card view
   const { viewType, toggleViewType } = useViewType();
@@ -100,7 +93,6 @@ function BlogListPage(props) {
               <div className="bloghome__swith-view">
               </div>
               <div className="bloghome__posts">
-                <Adsense responsive="true" auto="fluid" slot="6767147116" />
                 <div className="bloghome__posts-list">
                   {items.map(({ content: BlogPostContent }, index) => {
                     const { metadata: blogMetaData, frontMatter } =
@@ -166,13 +158,11 @@ function BlogListPage(props) {
                     );
                   })}
                 </div>
-                <BlogListPaginator metadata={metadata} />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Adsense responsive="true" format="auto" slot="9797738783" />
     </Layout>
   );
 }

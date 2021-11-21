@@ -26,7 +26,6 @@ import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
 // import Comments from "@site/src/components/Comments";
-import Adsense from "@site/src/components/Adsense";
 
 import Translate from "@docusaurus/Translate";
 
@@ -225,7 +224,6 @@ function BlogPostItem(props) {
                 <div className="text--center margin-bottom--xs padding-bottom--xs">
                   {renderTags()}
                 </div>
-                <Adsense responsive="true" format="auto" slot="2800800187" />
               </>
             )}
 
@@ -237,16 +235,6 @@ function BlogPostItem(props) {
             >
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
-            {/* {isBlogPostPage && (
-              <div style={{ marginTop: "1em" }}>
-                {adConfig.articleFooter.map(({ id, alt, imageSrc, link }) => (
-                  <Ad key={id} link={link} src={imageSrc} alt={alt} />
-                ))}
-              </div>
-            )} */}
-            {isBlogPostPage && (
-              <Adsense responsive="true" format="auto" slot="4590671808" />
-            )}
           </article>
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {!isBlogPostPage && (
