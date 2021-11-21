@@ -135,10 +135,6 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
-    // gtag: {
-    //   trackingID: "G-6PSESJX0BM",
-    //   anonymizeIP: true, // Should IPs be anonymized?
-    // },
   },
   presets: [
     [
@@ -173,26 +169,18 @@ module.exports = {
       },
     ],
   ],
-  // themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
-    path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
-    path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
+    // path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
+    // path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // "@docusaurus/plugin-ideal-image",
-    path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
-    path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
-    path.resolve(__dirname, "./src/plugin/plugin-latest-docs"),
-    "docusaurus2-dotenv",
+    // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+    // path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
+    // path.resolve(__dirname, "./src/plugin/plugin-latest-docs"),
+    // "docusaurus2-dotenv",
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        // language: ["en", "zh"],
-        // ```
-        // When applying `zh` in language, please install `nodejieba` in your project.
       },
     ],
   ],
