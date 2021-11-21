@@ -20,14 +20,12 @@ import ThemeContext from "@theme/ThemeContext";
 import styles from "./styles.module.css";
 import { MarkdownSection, StyledBlogItem } from "./style";
 
-import Eye from "@site/static/icons/eye.svg";
+// import Eye from "@site/static/icons/eye.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import Comments from "@site/src/components/Comments";
-import Ad from "@site/src/components/Ad";
-import adConfig from "@site/src/components/Ad/config";
+// import Comments from "@site/src/components/Comments";
 import Adsense from "@site/src/components/Adsense";
 
 import Translate from "@docusaurus/Translate";
@@ -253,11 +251,6 @@ function BlogPostItem(props) {
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {!isBlogPostPage && (
               <span className="footer__read_count">
-                <Eye
-                  // color={isDarkTheme ? "#76baff" : "#006dfe"}
-                  className="footer__eye"
-                  style={{ verticalAlign: "middle" }}
-                />{" "}
                 {views}
               </span>
             )}
@@ -268,9 +261,9 @@ function BlogPostItem(props) {
                 </strong>
               </Link>
             )}
-            {isBlogPostPage && (
-              <Comments activityId={activityId} oid={oid} bvid={bvid} />
-            )}
+            {/* {isBlogPostPage && (
+              // <Comments activityId={activityId} oid={oid} bvid={bvid} />
+            )} */}
           </footer>
         </div>
       </div>

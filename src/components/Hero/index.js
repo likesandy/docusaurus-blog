@@ -8,15 +8,6 @@ import Link from "@docusaurus/Link";
 import Button from "../Button";
 
 import HeroMain from "./img/hero_main.svg";
-import BilibiliIcon from "@site/static/icons/bilibili.svg";
-import CSDNIcon from "@site/static/icons/csdn.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faWeixin,
-} from "@fortawesome/free-brands-svg-icons";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import useFollowers from "./useFollowers";
 

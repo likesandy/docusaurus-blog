@@ -139,6 +139,7 @@ table {
   font-size: 1.8em;
 }
 
+
 .markdown > h3 {
   font-size: 1.5em;
 }
@@ -364,7 +365,6 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .post__date {
-  background: url("/icons/circle.svg") no-repeat;
   background-size: contain;
   background-position: center;
   display: grid;

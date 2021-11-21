@@ -13,12 +13,6 @@ module.exports = {
   projectName: "docusaurus-blog", // Usually your repo name.
   themeConfig: {
     image: "img/favicon.ico",
-    announcementBar: {
-      id: "feature_release", // Any value that will identify this message.
-      content: `近期更新：<a>博客迁移</a>🎉🎉`,
-      backgroundColor: "#fafbfc", // Defaults to `#fff`.
-      textColor: "#238E23   ", // Defaults to `#000`.
-    },
     hideableSidebar: true,
     navbar: {
       title: "codertao",
@@ -156,17 +150,17 @@ module.exports = {
           ],
         },
       ],
-      copyright: `<br><br><br><br><p>Copyright © ${new Date().getFullYear()} codertao Built with Docusaurus`,
+      copyright: `<br><br>Copyright © ${new Date().getFullYear()} codertao Built with Docusaurus`,
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
-    gtag: {
-      trackingID: "G-6PSESJX0BM",
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
+    // gtag: {
+    //   trackingID: "G-6PSESJX0BM",
+    //   anonymizeIP: true, // Should IPs be anonymized?
+    // },
   },
   presets: [
     [
