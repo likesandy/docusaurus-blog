@@ -39,11 +39,7 @@ module.exports = {
         },
       ],
     },
-    algolia: {
-      apiKey: "fabfb0e9997e101154ed85d64b7b6a3c",
-      indexName: "ZXUQIANCN",
-      appId: "LIJMO3C9C4",
-    },
+
     footer: {
       style: "dark",
       links: [
@@ -186,6 +182,19 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
     path.resolve(__dirname, "./src/plugin/plugin-latest-docs"),
     "docusaurus2-dotenv",
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+        // When applying `zh` in language, please install `nodejieba` in your project.
+      },
+    ],
   ],
   stylesheets: [
     {

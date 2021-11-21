@@ -1,5 +1,6 @@
 # Dependencies
 /node_modules
+/build
 
 # Production
 /drafts
@@ -9,6 +10,8 @@ cloudbaserc.json
 # Generated files
 .docusaurus
 .cache-loader
+
+yarn.lock
 
 # Misc
 .DS_Store

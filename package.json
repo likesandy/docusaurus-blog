@@ -18,11 +18,13 @@
     "index": "docker run -it --env-file=.env -e \"CONFIG=$(cat docsearch.json | jq -r tostring)\" algolia/docsearch-scraper"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.6.7",
     "@docusaurus/core": "^2.0.0-beta.3",
     "@docusaurus/plugin-debug": "^2.0.0-beta.3",
     "@docusaurus/plugin-ideal-image": "^2.0.0-beta.3",
     "@docusaurus/preset-classic": "^2.0.0-beta.3",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.3",
+    "@easyops-cn/docusaurus-search-local": "^0.20.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
