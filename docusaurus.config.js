@@ -6,10 +6,10 @@ const adsense = require("./src/plugin/remark-adsense");
 module.exports = {
   title: "codertao",
   titleDelimiter: "-",
-  url: "https://itsandy.gitee.io/",
-  baseUrl: "/docusaurus-blog/",
-  favicon: "../img/favicon.ico",
-  organizationName: "sandy", // Usually your GitHub org/user name.
+  url: "https://docusaurus-blog-likesandy.vercel.app/",
+  baseUrl: "/",
+  favicon: "img/favicon.ico",
+  organizationName: "likesandy", // Usually your GitHub org/user name.
   projectName: "docusaurus-blog", // Usually your repo name.
   themeConfig: {
     image: "img/favicon.ico",
@@ -18,8 +18,8 @@ module.exports = {
       title: "codertao",
       logo: {
         alt: "codertao",
-        src: "../img/favicon.ico",
-        srcDark: "../img/favicon.ico",
+        src: "img/favicon.ico",
+        srcDark: "img/favicon.ico",
       },
       items: [
         {
