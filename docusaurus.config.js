@@ -7,9 +7,9 @@ module.exports = {
   title: "codertao",
   titleDelimiter: "-",
   url: "https://itsandy.gitee.io/",
-  baseUrl: "/docusaurus-blog/",
+  baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "likesandy", // Usually your GitHub org/user name.
+  organizationName: "sandy", // Usually your GitHub org/user name.
   projectName: "docusaurus-blog", // Usually your repo name.
   themeConfig: {
     image: "img/favicon.ico",
