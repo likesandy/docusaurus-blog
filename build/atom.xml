@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docusaurus-blog-likesandy.vercel.app/docusaurus-blog/</id>
+    <title>codertao</title>
+    <updated>2021-11-21T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docusaurus-blog-likesandy.vercel.app/docusaurus-blog/"/>
+    <subtitle>codertao Blog</subtitle>
+    <icon>https://docusaurus-blog-likesandy.vercel.app/docusaurus-blog/img/favicon.ico</icon>
+    <rights>&lt;br&gt;&lt;br&gt;&lt;br&gt;Copyright © 2021 codertao Built with Docusaurus</rights>
+    <entry>
+        <title type="html"><![CDATA[浏览器存储方案]]></title>
+        <id>2021-11-21-浏览器存储方案</id>
+        <link href="https://docusaurus-blog-likesandy.vercel.app/docusaurus-blog/2021-11-21-浏览器存储方案"/>
+        <updated>2021-11-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[一、认识Storage]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[防抖与节流]]></title>
+        <id>2021-11-21-防抖和节流</id>
+        <link href="https://docusaurus-blog-likesandy.vercel.app/docusaurus-blog/2021-11-21-防抖和节流"/>
+        <updated>2021-11-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[一、认识防抖和节流函数]]></summary>
+    </entry>
+</feed>

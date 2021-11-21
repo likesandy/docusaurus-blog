@@ -1,0 +1,1 @@
+(self.webpackChunkzxuqian_cn=self.webpackChunkzxuqian_cn||[]).push([[965],{8494:function(a){"use strict";a.exports=JSON.parse('{"javascript":{"allTagsPath":"/docusaurus-blog/tags","slug":"javascript","name":"javascript","count":2,"permalink":"/docusaurus-blog/tags/javascript"}}')}}]);
