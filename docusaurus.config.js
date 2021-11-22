@@ -43,65 +43,65 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "社交媒体",
+          title: "学习路线",
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/zxuqian/zxuqian.cn",
+              label: "objtube推荐学习路线",
+              href: "https://objtube.gitee.io/front-end-roadmap/#/",
             },
             {
-              label: "Bilibili 哔哩哔哩",
-              href: "https://space.bilibili.com/302954484",
+              label: "鱼皮推荐学习路线",
+              href: "https://code-learning-gamma.vercel.app/#/./%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/%E9%B1%BC%E7%9A%AE%E5%87%BA%E5%93%81-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF",
             },
             {
-              label: "网易云课堂",
-              href: "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
+              label: "阿里前端学习路线",
+              href: "https://f2e.tech/home",
             },
             {
-              label: "腾讯课堂",
-              href: "https://ke.qq.com/course/2839093?tuin=3850fdc6",
+              label: "roadmap推荐学习路线",
+              href: "https://roadmap.sh/frontend",
             },
           ],
         },
         {
-          title: "社交媒体",
+          title: "学习平台",
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/zxuqian/zxuqian.cn",
-            },
-            {
-              label: "Bilibili 哔哩哔哩",
-              href: "https://space.bilibili.com/302954484",
-            },
-            {
-              label: "网易云课堂",
-              href: "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
-            },
-            {
               label: "腾讯课堂",
-              href: "https://ke.qq.com/course/2839093?tuin=3850fdc6",
+              href: "https://ke.qq.com/",
+            },
+            {
+              label: "慕课网",
+              href: "https://www.imooc.com/",
+            },
+            {
+              label: "掘金",
+              to: "https://juejin.cn/",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/",
             },
           ],
         },
         {
-          title: "友情链接",
+          title: "学习资源",
           items: [
             {
-              label: "DingShiYi",
-              to: "https://dingshiyi.top/home",
+              label: "王红元",
+              to: "https://ke.qq.com/teacher/372623326",
             },
             {
-              label: "霜序廿的个人网站",
-              to: "https://shuangxunian.github.io/",
+              label: "Bilibili 哔哩哔哩",
+              href: "https://www.bilibili.com/",
             },
             {
-              label: "羽翼丶年华",
-              to: "https://eve-wings.github.io/Eve-Wings/",
+              label: "MDN",
+              to: "https://developer.mozilla.org/zh-CN/",
             },
             {
-              label: "旧版博客",
-              to: "https://itsandy.gitee.io/sandy.gitee.io/#/",
+              label: "奇舞周刊",
+              to: "https://weekly.75.team/",
             },
           ],
         },
