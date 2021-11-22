@@ -164,8 +164,6 @@ function BlogPostItem(props) {
         )}
       </Head>
 
-      {/* 统计 */}
-      {isBlogPostPage && <Count postId={postId} />}
       <div
         className={`row 
          ${!isBlogPostPage ? "blog-list--item" : ""}`}
@@ -259,30 +257,5 @@ function BlogPostItem(props) {
   );
 }
 
-function Count({ postId, ...post }) {
-  return (
-    <BrowserOnly fallback={<div></div>}>
-      {() => {
-        // if (localStorage.getItem(postId)) return null;
-
-        const addViewCount = async () => {
-          await fetch("https://api.zxuqian.cn/post/increase_view", {
-            method: "PUT",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ postId }),
-          });
-          // localStorage.setItem(postId, true);
-        };
-
-        useEffect(() => {
-          addViewCount();
-        }, []);
-        return null;
-      }}
-    </BrowserOnly>
-  );
-}
 
 export default BlogPostItem;
