@@ -27,6 +27,24 @@ module.exports = {
           position: "right",
         },
         {
+          label: "前端基础",
+          position: "right",
+          items: [
+            {
+              label: "HTML",
+              to: "docs/html/html",
+            },
+            {
+              label: "CSS",
+              to: "docs/css/css",
+            },
+            {
+              label: "JavaScript",
+              to: "docs/javascript/javascript",
+            },
+          ],
+        },
+        {
           to: "docs/collect/intro",
           label: "优文转载",
           position: "right",
