@@ -3,4 +3,4 @@ id: javascript
 title: 前言
 ---
 
-期待后续更新
+持续更新JavaScript专栏内容
