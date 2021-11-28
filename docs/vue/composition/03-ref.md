@@ -4,7 +4,7 @@ title: Ref API
 
 ## 一、ref
 
-如果想让setup中定义的数据具有响应式的特性，那么我们可以使用[ref]((https://v3.cn.vuejs.org/api/refs-api.html#ref))函数
+如果想让setup中定义的数据具有响应式的特性，那么我们可以使用[ref](https://v3.cn.vuejs.org/api/refs-api.html#ref)函数
 
 ref 会返回一个可变的响应式对象，该对象作为一个 响应式的引用 维护着它内部的值，这就是ref名称的来源(**引用对象**)
 
