@@ -137,8 +137,19 @@ table {
 
 .markdown > h2 {
   font-size: 1.8em;
+  margin-top: calc(var(--ifm-h2-vertical-rhythm-top)*var(--ifm-leading));
 }
 
+.markdown > h2:before {
+  background: #338bff;
+  color: transparent;
+  content: ".";
+}
+.admonition-icon,
+.markdown > h2:before {
+  margin-right: 0.4em;
+  display: inline-block;
+}
 
 .markdown > h3 {
   font-size: 1.5em;

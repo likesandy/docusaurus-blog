@@ -27,7 +27,7 @@ module.exports = {
           position: "right",
         },
         {
-          label: "前端基础",
+          label: "前端入门",
           position: "right",
           items: [
             {
@@ -44,6 +44,25 @@ module.exports = {
             },
           ],
         },
+        {
+          label: "前端开发框架",
+          position: "right",
+          items: [
+            {
+              label: "Vue",
+              to: "docs/vue/composition/composition",
+            },
+            {
+              label: "React",
+              to: "docs/react/react",
+            },
+          ],
+        },
+        // {
+        //   to: "docs/node/web-server",
+        //   label: "Node.JS",
+        //   position: "right",
+        // },
         {
           to: "docs/collect/intro",
           label: "优文转载",
