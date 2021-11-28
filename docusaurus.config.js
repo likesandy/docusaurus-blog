@@ -27,7 +27,7 @@ module.exports = {
           position: "right",
         },
         {
-          label: "前端入门",
+          label: "不屈白银",
           position: "right",
           items: [
             {
@@ -45,7 +45,7 @@ module.exports = {
           ],
         },
         {
-          label: "前端开发框架",
+          label: "荣耀黄金",
           position: "right",
           items: [
             {
@@ -58,11 +58,16 @@ module.exports = {
             },
           ],
         },
-        // {
-        //   to: "docs/node/web-server",
-        //   label: "Node.JS",
-        //   position: "right",
-        // },
+        {
+          label: "尊贵铂金",
+          position: "right",
+          items: [
+            {
+              label: "Node",
+              to: "docs/node/web-server",
+            },
+          ],
+        },
         {
           to: "docs/collect/intro",
           label: "优文转载",
